@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="cards.css">
+
+</head>
+<body>
+    <div class="container w-75">
+        <h1>Blackjack</h1>
+
+        <div id="gameTable" class="row">
+            <div class="col-2">
+                <h4>Draw Deck</h4>
+                <img id="drawDeck" src="cards-png-100x153-numbered/blue_back.png" alt="blue card back" height="153"
+                     width="100"/>
+                <h4 id="hit" class="button">Hit</h4>
+                <h4 id="stand" class="button">Stand</h4>
+                <h4 id="playAgain" class="button">Play Again</h4>
+            </div>
+            <div class="col-8">
+                <div id="dealerArea" class="playArea">
+                    <h2>Dealer <span id="dealerTotal"></span></h2>
+
+
+                </div>
+                <div id="playerArea" class="playArea">
+                    <h2>Player <span id="playerTotal"></span></h2>
+
+
+                </div>
+            </div>
+            <div class="col-2">
+                <h4>Discard Pile</h4>
+                <div id="discardPile"></div>
+            </div>
+        </div>
+        <p></p>
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="cards.js"></script>
+</body>
+</html>

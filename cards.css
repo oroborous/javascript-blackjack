@@ -1,0 +1,34 @@
+h1 {
+    padding: 10px 0;
+}
+
+body {
+    text-align: center;
+}
+
+#gameTable {
+    background-color: forestgreen;
+    height: 450px;
+    border: 2px dashed darkgreen;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgba(240, 248, 255, 1);
+    cursor: pointer;
+}
+
+.button {
+    background-color: rgba(240, 248, 255, .5);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#playAgain {
+    display: none;
+}
+
+.playArea {
+    height: 50%;
+}
