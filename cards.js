@@ -1,8 +1,8 @@
 const imageDirectory = "cards-png-100x153-numbered";
 
-var playerHand = 0;
-var dealerHand = 0;
-var gameOver = false;
+let playerHand = 0;
+let dealerHand = 0;
+let gameOver = false;
 
 $(document).ready(function () {
     $("#hit").click(playerHit);
@@ -75,7 +75,7 @@ $(document).ready(function () {
 
     function endGame() {
         // Get the last card in the player's area
-        var lastCard = $("#playerArea img").last();
+        let lastCard = $("#playerArea img").last();
 
         // Remove all images from both play areas
         $(".playArea img").remove();
@@ -99,19 +99,19 @@ $(document).ready(function () {
 
     function drawCard(forPlayer) {
         // Create a new image element
-        var cardImage = $("<img>");
+        let cardImage = $("<img>");
 
         // set the image's alt text
         cardImage.attr("alt", "playing card");
 
         // Generate random number 1 - 52
-        var randomNumber = Math.floor(Math.random() * 52) + 1;
+        let randomNumber = Math.floor(Math.random() * 52) + 1;
 
         // What is the card's face value? 13 cards per suit
-        var faceValue = randomNumber % 13;
+        let faceValue = randomNumber % 13;
 
         // What is this card worth?
-        var points;
+        let points;
 
         // Determine a card's points
         if (faceValue === 1) // ace
@@ -130,7 +130,7 @@ $(document).ready(function () {
             dealerHand += points;
 
             // How many cards are in the dealer's area?
-            var numDealerCards = $("#dealerArea img").length;
+            let numDealerCards = $("#dealerArea img").length;
 
             // if this is the dealer's first card
             if (numDealerCards === 0) {
